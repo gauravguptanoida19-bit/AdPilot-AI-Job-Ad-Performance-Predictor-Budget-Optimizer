@@ -1,0 +1,51 @@
+<svg width="1000" height="540" viewBox="0 0 1000 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="540" rx="16" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <rect x="2" y="2" width="996" height="50" rx="14" fill="#0f172a" />
+  <circle cx="28" cy="26" r="6" fill="#ef4444" />
+  <circle cx="46" cy="26" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="26" r="6" fill="#10b981" />
+  <text x="100" y="31" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="14" font-weight="700">AdPilot Enterprise Portal • Authentication Gate</text>
+
+  <!-- Login Card Centered -->
+  <g transform="translate(300, 75)">
+    <rect x="0" y="0" width="400" height="430" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- App Logo Icon -->
+    <rect x="180" y="25" width="40" height="40" rx="10" fill="#6366f1"/>
+    <polygon points="200,33 210,50 190,50" fill="#ffffff"/>
+
+    <text x="200" y="90" text-anchor="middle" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="18" font-weight="700">Sign In to AdPilot</text>
+    <text x="200" y="110" text-anchor="middle" fill="#64748b" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Programmatic Recruitment Intelligence</text>
+
+    <!-- 1-Click Demo Profiles Box -->
+    <rect x="25" y="125" width="350" height="75" rx="8" fill="#020617" stroke="#1e293b"/>
+    <text x="35" y="143" fill="#818cf8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="10" font-weight="700">★ 1-CLICK DEMO ACCOUNTS</text>
+
+    <rect x="35" y="152" width="160" height="38" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-opacity="0.5"/>
+    <text x="45" y="168" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Sarah Chen</text>
+    <text x="45" y="182" fill="#818cf8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="9">Joveo Recruiter</text>
+
+    <rect x="205" y="152" width="160" height="38" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="215" y="168" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Alex Mercer</text>
+    <text x="215" y="182" fill="#64748b" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="9">Campaign Director</text>
+
+    <!-- Email Field -->
+    <text x="25" y="222" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">ENTERPRISE EMAIL</text>
+    <rect x="25" y="230" width="350" height="36" rx="8" fill="#020617" stroke="#334155"/>
+    <text x="38" y="253" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="12">recruiter@joveo.com</text>
+
+    <!-- Password Field -->
+    <text x="25" y="285" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">PASSWORD</text>
+    <rect x="25" y="293" width="350" height="36" rx="8" fill="#020617" stroke="#334155"/>
+    <text x="38" y="316" fill="#ffffff" font-family="monospace" font-size="14">••••••••••••</text>
+
+    <!-- Submit Button -->
+    <rect x="25" y="345" width="350" height="40" rx="8" fill="#6366f1"/>
+    <text x="200" y="370" text-anchor="middle" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="13" font-weight="700">Sign In to Enterprise Dashboard →</text>
+
+    <!-- Guest Mode link -->
+    <text x="200" y="408" text-anchor="middle" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Continue as Guest Reviewer &rarr;</text>
+  </g>
+</svg>

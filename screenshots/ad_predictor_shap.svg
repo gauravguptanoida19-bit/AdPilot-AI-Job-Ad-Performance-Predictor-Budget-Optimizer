@@ -1,0 +1,83 @@
+<svg width="1000" height="540" viewBox="0 0 1000 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="540" rx="16" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <rect x="2" y="2" width="996" height="50" rx="14" fill="#0f172a" />
+  <circle cx="28" cy="26" r="6" fill="#ef4444" />
+  <circle cx="46" cy="26" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="26" r="6" fill="#10b981" />
+  <text x="100" y="31" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="14" font-weight="700">AdPilot • Ad Performance Predictor &amp; TreeSHAP Explainer</text>
+  <rect x="780" y="16" width="190" height="24" rx="12" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-opacity="0.3"/>
+  <circle cx="795" cy="28" r="4" fill="#6366f1" />
+  <text x="806" y="32" fill="#818cf8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">TreeSHAP Engine Active</text>
+
+  <!-- Left: Scored Ad Details -->
+  <rect x="30" y="70" width="460" height="440" rx="12" fill="#0f172a" stroke="#1e293b"/>
+  <text x="50" y="100" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="15" font-weight="700">Scored Job Posting Parameters</text>
+  <text x="50" y="118" fill="#64748b" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Lead Systems Engineer • Apex Tech Systems</text>
+
+  <g transform="translate(50, 135)">
+    <rect x="0" y="0" width="420" height="34" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="12" y="22" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Role Title:</text>
+    <text x="100" y="22" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Lead Systems Engineer</text>
+
+    <rect x="0" y="44" width="420" height="34" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="12" y="66" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Compensation:</text>
+    <text x="100" y="66" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">$160,000 - $200,000 / year (USD)</text>
+
+    <rect x="0" y="88" width="420" height="34" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="12" y="110" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Location:</text>
+    <text x="100" y="110" fill="#38bdf8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Remote Eligible • Full-time</text>
+
+    <rect x="0" y="132" width="420" height="34" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="12" y="154" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Seniority Level:</text>
+    <text x="100" y="154" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Mid-Senior level (Score 4)</text>
+
+    <rect x="0" y="176" width="420" height="34" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="12" y="198" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Description Length:</text>
+    <text x="120" y="198" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">1,142 Chars • 4 Bullet Sections</text>
+
+    <!-- Score Gauge Card -->
+    <rect x="0" y="225" width="420" height="130" rx="8" fill="#064e3b" fill-opacity="0.3" stroke="#10b981" stroke-opacity="0.5"/>
+    <text x="15" y="252" fill="#34d399" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="700">PREDICTED CANDIDATE PERFORMANCE</text>
+    <text x="15" y="292" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="34" font-weight="800">11.85%</text>
+    <text x="145" y="280" fill="#a7f3d0" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="13">Apply-to-View Rate</text>
+    <text x="145" y="298" fill="#6ee7b7" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11 font-weight-600">~11.9 applications per 100 views</text>
+    <text x="15" y="336" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">★ Classified as Top Tier High Converter (81.2% probability)</text>
+  </g>
+
+  <!-- Right: TreeSHAP Waterfall & Recommendations -->
+  <rect x="510" y="70" width="460" height="440" rx="12" fill="#0f172a" stroke="#1e293b"/>
+  <text x="530" y="100" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="15" font-weight="700">TreeSHAP Factor Breakdown</text>
+  <text x="530" y="118" fill="#64748b" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Base Model Expectation: 9.78% • Net Lift: +2.07%</text>
+
+  <!-- Positive Factors -->
+  <g transform="translate(530, 135)">
+    <text x="0" y="14" fill="#10b981" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="700">▲ POSITIVE CONVERSION BOOSTERS</text>
+    
+    <rect x="0" y="22" width="420" height="30" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="10" y="42" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Salary Disclosed ($160k-$200k)</text>
+    <text x="350" y="42" fill="#10b981" font-family="monospace" font-size="12" font-weight="700">+1.63%</text>
+
+    <rect x="0" y="58" width="420" height="30" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="10" y="78" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Remote Flexibility Allowed</text>
+    <text x="350" y="78" fill="#10b981" font-family="monospace" font-size="12" font-weight="700">+1.15%</text>
+
+    <rect x="0" y="94" width="420" height="30" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="10" y="114" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11">Sponsored Posting Flag</text>
+    <text x="350" y="114" fill="#10b981" font-family="monospace" font-size="12" font-weight="700">+0.44%</text>
+  </g>
+
+  <!-- Prescriptive Recommendations -->
+  <g transform="translate(530, 290)">
+    <text x="0" y="14" fill="#818cf8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="700">★ ACTIONABLE OPTIMIZATION TIPS</text>
+
+    <rect x="0" y="24" width="420" height="50" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="10" y="44" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Optimal Description Length (1,142 chars)</text>
+    <text x="10" y="62" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="10">Length is in the 800-1,800 sweet spot. Candidate mobile retention is maximized.</text>
+
+    <rect x="0" y="80" width="420" height="50" rx="6" fill="#020617" stroke="#1e293b"/>
+    <text x="10" y="100" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" font-weight="600">Structured Bullet Points (4 detected)</text>
+    <text x="10" y="118" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="10">Clear separation of responsibilities increases applicant conversion by ~18%.</text>
+  </g>
+</svg>

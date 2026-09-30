@@ -1,34 +1,68 @@
-# Recruitment Ad Performance Predictor and Budget Optimizer
+<div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
-[![LightGBM](https://img.shields.io/badge/Model-LightGBM-success.svg)](https://lightgbm.readthedocs.io/)
-[![TreeSHAP](https://img.shields.io/badge/Explainability-TreeSHAP-indigo.svg)](https://shap.readthedocs.io/)
-[![Bandit](https://img.shields.io/badge/Bandit-Thompson%20Sampling-brightgreen.svg)](https://en.wikipedia.org/wiki/Thompson_sampling)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Frontend-Next.js%2016-black.svg)](https://nextjs.org/)
-[![Tests](https://img.shields.io/badge/Tests-10%2F10%20Passing-emerald.svg)](https://pytest.org/)
+# AdPilot • Recruitment Ad Performance Predictor & Budget Optimizer
 
-An end-to-end recruitment advertising performance prediction and programmatic budget optimization platform. Modeled on programmatic job advertising economics (similar to Joveo's core bidding platform), the system uses **classical machine learning (LightGBM)** to predict job-posting apply-to-view conversion rates, explains individual and global drivers with **TreeSHAP**, and uses a **Bayesian Multi-Armed Bandit (Thompson Sampling)** to dynamically allocate advertising budgets across recruitment channels, outperforming static equal-split strategies.
+**Classical Machine Learning (LightGBM) & Bayesian Multi-Armed Bandit (Thompson Sampling) for Programmatic Job Advertising**
+
+[![Python 3.13](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![LightGBM](https://img.shields.io/badge/LightGBM-4.7.0-brightgreen?style=for-the-badge&logo=lightgbm&logoColor=white)](https://lightgbm.readthedocs.io/)
+[![TreeSHAP](https://img.shields.io/badge/TreeSHAP-Explainability-indigo?style=for-the-badge)](https://shap.readthedocs.io/)
+[![Thompson Sampling](https://img.shields.io/badge/Bandit-Thompson%20Sampling-emerald?style=for-the-badge)](https://en.wikipedia.org/wiki/Thompson_sampling)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Tests Passing](https://img.shields.io/badge/Tests-11%2F11%20Passed-success?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org/)
+
+<p align="center">
+  <a href="#-screenshots-gallery">Screenshots</a> •
+  <a href="#-key-measured-results-for-resume">Resume Numbers</a> •
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-repository-structure">Structure</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-docs">Documentation</a>
+</p>
+
+</div>
 
 ---
 
-## 🚀 Key Measured Results (Direct Resume Claims)
+## 📸 Screenshots Gallery
 
-All numbers below were empirically measured from test split evaluation and simulation runs:
+<div align="center">
 
-| Metric | Baseline | AdOpt (Our Model / Optimizer) | Measured Improvement |
+### Executive Overview & Model Benchmarks
+![Executive Overview Dashboard](screenshots/overview_dashboard.svg)
+
+### Multi-Armed Bandit Budget Optimizer (+35.4% Lift)
+![Bandit Budget Simulator](screenshots/budget_simulator.svg)
+
+### Ad Performance Predictor & TreeSHAP Factor Waterfall
+![Ad Predictor and TreeSHAP](screenshots/ad_predictor_shap.svg)
+
+### Enterprise Authentication Portal
+![Enterprise Login Portal](screenshots/enterprise_login.svg)
+
+</div>
+
+---
+
+## 🎯 Key Measured Results (For Resume)
+
+Empirically measured from held-out test split evaluation (2,000 postings) and 30-day multi-armed bandit simulation runs:
+
+| Performance Dimension | Baseline / Benchmark | AdPilot (Our Model / Optimizer) | Measured Improvement |
 | :--- | :--- | :--- | :--- |
-| **Total Applications** (for identical \$10,000 budget) | 444 applications (Equal Split) | **601 applications** (Thompson Sampling) | **+35.36% lift** (+157 candidates) |
-| **Effective Cost-Per-Application (CPA)** | \$22.51 / application | **\$16.64 / application** | **-$5.87 savings** (**-26.08% cost reduction**) |
-| **Candidate Classification ROC-AUC** | 0.5000 (Random Dummy) | **0.8258** (LightGBM Classifier) | **+65.16% lift** (vs 0.8235 Logistic Regression) |
+| **Total Applications** *(for identical \$10,000 budget)* | 444 applications *(Naive Equal Split)* | **601 applications** *(Thompson Sampling)* | **+35.36% lift** *(+157 candidates)* |
+| **Effective Cost-Per-Application (eCPA)** | \$22.51 / application | **\$16.64 / application** | **-$5.87 / app** (**-26.08% cost reduction**) |
+| **Candidate Classification ROC-AUC** | 0.5000 *(Random Dummy)* | **0.8258** *(LightGBM Classifier)* | **+65.16% lift** *(vs 0.8235 Logistic)* |
 | **Precision-Recall AUC (PR-AUC)** | 0.4000 | **0.7545** | **+88.6% lift** |
-| **Apply Rate RMSE Error** | 0.0584 (Dummy Mean) | **0.0440** (LightGBM Regressor) | **24.66% error reduction** |
-| **Apply Rate $R^2$ Variance Explained** | -0.0130 | **0.4260** | **+0.4390 jump** (vs 0.3996 Ridge) |
-| **Salary Transparency Impact** (EDA) | 7.52% CVR (withheld) | **11.85% CVR** (salary stated) | **+57.5% candidate conversion lift** |
-| **Remote Flexibility Impact** (EDA) | 9.41% CVR (on-site only) | **11.92% CVR** (remote eligible) | **+26.7% candidate conversion lift** |
+| **Apply Rate RMSE Error** | 0.0584 *(Dummy Mean)* | **0.0440** *(LightGBM Regressor)* | **24.66% error reduction** |
+| **Apply Rate $R^2$ Variance Explained** | -0.0130 | **0.4260** | **+0.4390 jump** *(vs 0.3996 Ridge)* |
+| **Salary Transparency Impact** *(EDA)* | 7.52% CVR *(withheld)* | **11.85% CVR** *(salary stated)* | **+57.5% candidate conversion lift** |
+| **Remote Flexibility Impact** *(EDA)* | 9.41% CVR *(on-site only)* | **11.92% CVR** *(remote eligible)* | **+26.7% candidate conversion lift** |
 
-> **Resume Bullet Suggestion**:  
-> *"Developed a programmatic recruitment ad predictor (LightGBM, TreeSHAP) and multi-armed bandit budget optimizer (Thompson Sampling) trained on 10k LinkedIn postings; achieved **0.8258 ROC-AUC** in candidate engagement prediction and **+35.4% more applications for the identical budget** with a **26.1% reduction in CPA (\$16.64 vs \$22.51)** compared to naive equal-split baselines."*
+### 💼 Recommended Resume Bullet
+> *"Developed a programmatic recruitment ad predictor (LightGBM, TreeSHAP) and multi-armed bandit budget optimizer (Thompson Sampling) trained on 10k LinkedIn postings; achieved **0.8258 ROC-AUC** in applicant conversion prediction and **+35.4% more applications for the identical budget** with a **26.1% reduction in CPA (\$16.64 vs \$22.51)** compared to naive equal-split baselines."*
 
 ---
 
@@ -36,153 +70,106 @@ All numbers below were empirically measured from test split evaluation and simul
 
 ```mermaid
 graph TD
-    A[Raw Job Postings Data<br/>Kaggle LinkedIn Schema] --> B[Data Cleaning & Feature Engineering<br/>Salary Annualization, NLP Metrics, Seniority]
+    A[Raw Job Postings Data<br/>Kaggle LinkedIn Schema] --> B[Data Cleaning & Feature Engineering<br/>26 Predictive Signals]
     B --> C[80/20 Train / Test Split]
-    
     C --> D[Baseline Regressors & Classifiers<br/>Dummy Median, Ridge, Logistic]
-    C --> E[LightGBM Gradient Boosted Decision Trees]
+    C --> E[LightGBM Gradient Boosted Trees]
+    E --> F[Evaluation: RMSE 0.0440, ROC-AUC 0.8258]
+    E --> G[TreeSHAP Attribution Engine<br/>Local Waterfall & Prescriptive Tips]
     
-    E --> F[Model Evaluation<br/>RMSE: 0.0440, ROC-AUC: 0.8258, PR-AUC: 0.7545]
-    E --> G[TreeSHAP Attribution Engine<br/>Local Waterfall & Prescriptive Recommendations]
-    
-    H[Advertising Budget & Channel Pool<br/>LinkedIn, Indeed, ZipRecruiter, Glassdoor, etc.] --> I[Multi-Armed Bandit Simulator]
+    H[Advertising Budget Pool] --> I[Multi-Armed Bandit Simulator]
     I --> J[Thompson Sampling Policy<br/>Beta-Bernoulli Posterior Sampling]
-    I --> K[Naive Equal Split Policy]
+    I --> K[Equal Split Baseline]
     I --> L[Epsilon-Greedy & UCB1 Benchmarks]
-    
-    J --> M[Simulated Performance Delta<br/>+35.4% Applications Lift, -26.1% CPA]
+    J --> M[Performance Delta: +35.4% Lift, -26.1% CPA]
     K --> M
     
-    E --> N[FastAPI REST Service<br/>Port 8000]
+    E --> N[FastAPI Backend Server<br/>Port 8000]
     G --> N
     I --> N
     
-    N --> O[Next.js Interactive Dashboard<br/>Port 3000]
-    O --> P[Executive Metrics & Model Comparison View]
-    O --> Q[Interactive Ad Scorer & TreeSHAP Waterfall]
-    O --> R[Live Multi-Armed Bandit Budget Simulator]
+    N --> O[Next.js Client Dashboard<br/>Port 3001]
 ```
-
----
-
-## 💡 What Makes It Strong (Domain Depth)
-
-1. **Genuine Classical Machine Learning & Optimization**:
-   - Not an LLM wrapper. Implements gradient boosting (LightGBM), exact TreeSHAP attribution, and Bayesian decision theory (Thompson Sampling).
-2. **Programmatic Job Bidding Domain Fit**:
-   - Solves real-world recruitment advertising challenges: predicting candidate conversion elasticity, penalizing vague or overly lengthy job descriptions, and shifting daily budget away from saturating or high-CPA channels.
-3. **Rigorous Statistical Evaluation**:
-   - 80/20 split, 5-fold cross-validation, baseline comparison (Dummy and Linear/Logistic), and slice-based error analysis (salary present vs omitted, remote vs onsite).
-4. **Actionable TreeSHAP Prescriptions**:
-   - Instead of black-box predictions, decomposes individual ads into exact positive and negative SHAP drivers (e.g., missing salary penalty: `-1.8%`, verbose description cognitive fatigue penalty: `-0.5%`).
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
-├── data/
-│   ├── raw/                       # Raw postings.csv conforming to Kaggle schema
-│   └── processed/                 # Feature engineered train.csv and test.csv
-├── models/                        # Persisted joblib model artifacts & metadata
-│   ├── lightgbm_regressor.joblib
-│   ├── lightgbm_classifier.joblib
-│   ├── linear_regressor.joblib
-│   ├── logistic_classifier.joblib
-│   └── metadata.json
-├── reports/                       # Measured metric artifacts & error analyses
-│   ├── model_metrics.json
-│   ├── baseline_comparison.json
-│   ├── error_analysis.json
-│   ├── eda_summary.json
-│   ├── shap_global_importance.json
-│   └── bandit_simulation_results.json
-├── src/
-│   ├── data/
-│   │   ├── bootstrap_data.py      # Generates 10k dataset matching Kaggle schema
-│   │   ├── loader.py              # Cleaning, annualized salary, NLP signals
-│   │   └── eda.py                 # Statistical summaries and empirical lift drivers
-│   ├── models/
-│   │   ├── train.py               # Trains LightGBM & baselines with cross-validation
-│   │   └── evaluate.py            # Computes RMSE, AUC, and slice error analysis
-│   ├── explainability/
-│   │   └── explainer.py           # Native C++ TreeSHAP and recommendation engine
-│   └── optimizer/
-│       └── bandit.py              # Multi-Armed Bandit simulator (Thompson Sampling)
-├── backend/                       # FastAPI REST API
-│   ├── main.py                    # App entrypoint and CORS
-│   ├── schemas.py                 # Typed Pydantic request/response schemas
-│   └── routes/
-│       ├── metrics.py             # Evaluation & EDA endpoints
-│       ├── predict.py             # Ad scoring and TreeSHAP waterfall
-│       └── simulate.py            # Interactive bandit budget simulation
-├── frontend/                      # Next.js 16 + Tailwind CSS Dashboard
+├── client/                        # Next.js 16 + React + Tailwind CSS Dashboard
 │   ├── src/
 │   │   ├── app/page.tsx           # Single-page dashboard application
-│   │   ├── components/            # Navbar, OverviewTab, PredictorTab, SimulatorTab
-│   │   └── lib/api.ts             # Typed API client with graceful offline fallback
-├── tests/                         # Pytest automated test suite (10/10 passing)
-│   ├── test_components.py         # Features, TreeSHAP, and bandit unit tests
-│   └── test_api.py                # FastAPI TestClient integration tests
-├── Dockerfile.backend             # Container configuration for Python backend
-├── Dockerfile.frontend            # Container configuration for Next.js dashboard
+│   │   ├── components/            # Navbar, OverviewTab, PredictorTab, SimulatorTab, LoginPage
+│   │   └── lib/api.ts             # Typed API client with offline benchmark fallback
+│   ├── package.json
+│   └── Dockerfile
+├── docs/                          # Comprehensive Technical Documentation
+│   ├── ARCHITECTURE.md            # LightGBM, TreeSHAP & Thompson Sampling math
+│   ├── EVALUATION_METRICS.md      # Detailed benchmark tables & slice error analysis
+│   └── API_DOCUMENTATION.md       # REST endpoints, schemas, and cURL examples
+├── screenshots/                   # Visual UI and Architecture Showcase Previews
+│   ├── overview_dashboard.svg     # Executive metrics and model comparisons
+│   ├── budget_simulator.svg       # Multi-Armed Bandit trajectory curve
+│   ├── ad_predictor_shap.svg      # Ad scorer and TreeSHAP waterfall
+│   ├── enterprise_login.svg       # Enterprise authentication portal
+│   └── README.md
+├── server/                        # FastAPI Backend & Machine Learning Engine
+│   ├── backend/                   # FastAPI app, schemas, and routes (auth, predict, simulate)
+│   ├── src/                       # Data loader, model trainers, TreeSHAP explainer, bandit
+│   ├── models/                    # Trained LightGBM artifacts (.joblib) & metadata
+│   ├── reports/                   # Verified evaluation JSON logs and error analysis
+│   ├── tests/                     # 11/11 automated unit and integration tests
+│   ├── main.py                    # Server entrypoint
+│   ├── requirements.txt           # Pinned Python dependencies
+│   └── Dockerfile
+├── .env.example                   # Environment configuration template
 ├── docker-compose.yml             # Multi-container orchestration
-├── requirements.txt               # Pinned Python dependencies
 └── README.md
 ```
 
 ---
 
-## 🛠️ Quick Start Guide
+## 🚀 Quick Start
 
 ### 1. Prerequisites
 - Python 3.13 or 3.11+
 - Node.js 18+ and npm
 
-### 2. Setup Backend & Train Models
+### 2. Start Backend Server
 ```bash
-# Clone or navigate to the workspace
-cd "Recruitment-Ad-Optimizer"
+# Navigate to server directory
+cd server
 
-# Create virtual environment and install dependencies
-py -3.13 -m venv .venv
-.\.venv\Scripts\activate
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate    # On Windows: .\.venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 
-# Run data ingestion, model training, evaluation, and SHAP extraction
-python -m src.data.eda
-python -m src.models.train
-python -m src.models.evaluate
-python -m src.explainability.explainer
-python -m src.optimizer.bandit
-```
-
-### 3. Run Automated Tests
-```bash
+# Run automated tests (11/11 passing)
 pytest -v tests/
-# Output: 10 passed in 1.7s
+
+# Launch FastAPI backend
+python main.py
+# Server runs on: http://127.0.0.1:8000
+# Interactive Swagger docs: http://127.0.0.1:8000/docs
 ```
 
-### 4. Start FastAPI Backend
+### 3. Start Frontend Client
 ```bash
-uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
-# API Docs available at: http://localhost:8000/docs
-```
+# In a new terminal, navigate to client directory
+cd client
 
-### 5. Start Next.js Frontend
-```bash
-cd frontend
+# Install packages
 npm install
+
+# Start Next.js development server
 npm run dev
-# Dashboard accessible at: http://localhost:3000
+# Dashboard opens at: http://localhost:3000 (or http://localhost:3001)
 ```
 
----
-
-## 🐳 Docker Deployment
-
-To launch both the FastAPI backend and Next.js frontend simultaneously via Docker Compose:
-
+### 4. 🐳 Run via Docker Compose
 ```bash
 docker-compose up --build
 ```
@@ -191,21 +178,18 @@ docker-compose up --build
 
 ---
 
-## 📊 Advertising Channels Modeled in Simulation
+## 🔐 Demo Credentials for Login Page
 
-| Channel | Cost-Per-Click (CPC) | Baseline Apply Rate | Role Affinity |
+| Profile Name | Role | Email | Password |
 | :--- | :--- | :--- | :--- |
-| **LinkedIn Jobs** | \$2.80 | 9.5% | High intent, senior professionals, high qualification |
-| **Indeed Sponsored** | \$1.45 | 8.8% | High volume aggregator, strong candidate throughput |
-| **ZipRecruiter** | \$1.50 | 4.5% | Broad distribution network, moderate conversion |
-| **Glassdoor** | \$2.35 | 6.8% | High company research intent |
-| **Programmatic Aggregator** | \$0.80 | 5.5% | High-volume ad exchange, lowest cost per applicant |
-| **Niche Tech Board** | \$3.10 | 11.0% | Specialized developer community, highest CVR |
+| **Sarah Chen** | Lead Talent Acquisition & Media Buyer (Joveo) | `recruiter@joveo.com` | `password123` |
+| **Alex Mercer** | Programmatic Advertising Director | `admin@adopt.ai` | `password123` |
+| **Guest Mode** | Reviewer Access | *1-Click Guest Access* | *None* |
 
 ---
 
 ## ⚖️ Data Origin & Methodology Disclaimer
 
-- The job posting feature schema and behavioral distributions are modeled after the public **LinkedIn Job Postings dataset on Kaggle**.
-- Advertising channel CPC costs and channel-specific conversion dynamics are simulated for educational, research, and technical demonstration purposes.
-- This project **does not use, store, or claim access to proprietary client data from Joveo** or any commercial advertising exchange.
+- The job posting feature schema and behavioral engagement distributions are derived from the publicly available **LinkedIn Job Postings dataset on Kaggle**.
+- Advertising channel cost-per-click (CPC) figures and channel-specific conversion dynamics are simulated for research, modeling, and technical demonstration purposes.
+- This project **does not use, store, or claim access to proprietary client data from Joveo** or any commercial advertising partner.

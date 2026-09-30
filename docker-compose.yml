@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  backend:
+  server:
     build:
-      context: .
-      dockerfile: Dockerfile.backend
-    container_name: recruitment_ad_backend
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: adpilot_server
     ports:
       - "8000:8000"
     environment:
@@ -18,17 +18,17 @@ services:
       retries: 3
     restart: unless-stopped
 
-  frontend:
+  client:
     build:
-      context: .
-      dockerfile: Dockerfile.frontend
+      context: ./client
+      dockerfile: Dockerfile
       args:
         - NEXT_PUBLIC_API_URL=http://localhost:8000
-    container_name: recruitment_ad_frontend
+    container_name: adpilot_client
     ports:
       - "3000:3000"
     depends_on:
-      - backend
+      - server
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_API_URL=http://localhost:8000
