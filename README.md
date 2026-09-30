@@ -153,6 +153,11 @@ pip install -r requirements.txt
 # Run automated tests (11/11 passing)
 pytest -v tests/
 
+# Run Python CLI Ad Scorer & Bandit Simulator
+python cli.py benchmark
+python cli.py score --title "Senior ML Engineer" --min-salary 160000 --max-salary 200000
+python cli.py simulate --budget 10000 --days 30
+
 # Launch FastAPI backend
 python main.py
 # Server runs on: http://127.0.0.1:8000

@@ -1,0 +1,22 @@
+﻿# GitHub Linguist Language Configuration
+# Accurately balances Python (ML/Backend) and TypeScript (Frontend UI)
+
+# Enforce primary languages
+*.py linguist-language=Python
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+# Vendor API client wrappers and Next.js config files
+client/src/lib/api.ts linguist-vendored
+client/next.config.ts linguist-vendored
+client/eslint.config.mjs linguist-vendored
+client/postcss.config.mjs linguist-vendored
+client/next-env.d.ts linguist-vendored
+client/public/** linguist-vendored
+
+# Documentation and serialized models/data
+docs/** linguist-documentation
+server/data/** linguist-vendored
+server/reports/** linguist-vendored
+server/models/** linguist-vendored
+screenshots/** linguist-vendored
