@@ -6,6 +6,7 @@ const repoName = "AdPilot-AI-Job-Ad-Performance-Predictor-Budget-Optimizer";
 const nextConfig: NextConfig = {
   output: isGithubActions ? "export" : undefined,
   basePath: isGithubActions ? `/${repoName}` : undefined,
+  assetPrefix: isGithubActions ? `/${repoName}/` : undefined,
   images: {
     unoptimized: true,
   },
