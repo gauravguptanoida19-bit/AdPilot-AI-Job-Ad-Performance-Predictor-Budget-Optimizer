@@ -1,0 +1,124 @@
+{
+  "residual_summary": {
+    "mean_residual": -0.00073,
+    "std_residual": 0.044,
+    "median_abs_error": 0.0261,
+    "max_abs_error": 0.4944
+  },
+  "slice_performance": {
+    "salary_specified": {
+      "sample_count": 1300,
+      "mae": 0.0341,
+      "rmse": 0.0464
+    },
+    "salary_omitted": {
+      "sample_count": 700,
+      "mae": 0.0297,
+      "rmse": 0.0392
+    },
+    "remote_roles": {
+      "sample_count": 674,
+      "mae": 0.0374,
+      "rmse": 0.0515
+    },
+    "onsite_roles": {
+      "sample_count": 1326,
+      "mae": 0.03,
+      "rmse": 0.0396
+    }
+  },
+  "worst_over_predictions": [
+    {
+      "title": "Technical Support Specialist",
+      "company": "Apex Tech Systems",
+      "views": 37,
+      "applies": 0,
+      "actual_apply_rate": 0.0,
+      "predicted_apply_rate": 0.188,
+      "residual": -0.188
+    },
+    {
+      "title": "Technical Support Specialist",
+      "company": "BlueSky Retail Group",
+      "views": 91,
+      "applies": 6,
+      "actual_apply_rate": 0.0659,
+      "predicted_apply_rate": 0.2127,
+      "residual": -0.1468
+    },
+    {
+      "title": "Office Administrator",
+      "company": "Hyperion Cyber Security",
+      "views": 93,
+      "applies": 3,
+      "actual_apply_rate": 0.0323,
+      "predicted_apply_rate": 0.1658,
+      "residual": -0.1336
+    },
+    {
+      "title": "Talent Acquisition Specialist",
+      "company": "Pinnacle Energy Group",
+      "views": 28,
+      "applies": 2,
+      "actual_apply_rate": 0.0714,
+      "predicted_apply_rate": 0.2049,
+      "residual": -0.1335
+    },
+    {
+      "title": "Customer Success Manager",
+      "company": "Nexus Digital Partners",
+      "views": 43,
+      "applies": 2,
+      "actual_apply_rate": 0.0465,
+      "predicted_apply_rate": 0.1761,
+      "residual": -0.1296
+    }
+  ],
+  "worst_under_predictions": [
+    {
+      "title": "AI Research Scientist",
+      "company": "Beacon Health Solutions",
+      "views": 8,
+      "applies": 5,
+      "actual_apply_rate": 0.625,
+      "predicted_apply_rate": 0.1306,
+      "residual": 0.4944
+    },
+    {
+      "title": "Customer Support Representative",
+      "company": "Starlight Media",
+      "views": 75,
+      "applies": 30,
+      "actual_apply_rate": 0.4,
+      "predicted_apply_rate": 0.1893,
+      "residual": 0.2107
+    },
+    {
+      "title": "Social Media Coordinator",
+      "company": "Vanguard Financial Analytics",
+      "views": 39,
+      "applies": 11,
+      "actual_apply_rate": 0.2821,
+      "predicted_apply_rate": 0.0838,
+      "residual": 0.1982
+    },
+    {
+      "title": "Customer Support Representative",
+      "company": "Pulse Health Tech",
+      "views": 23,
+      "applies": 7,
+      "actual_apply_rate": 0.3043,
+      "predicted_apply_rate": 0.1165,
+      "residual": 0.1879
+    },
+    {
+      "title": "Talent Acquisition Specialist",
+      "company": "Nexus Digital Partners",
+      "views": 38,
+      "applies": 13,
+      "actual_apply_rate": 0.3421,
+      "predicted_apply_rate": 0.1576,
+      "residual": 0.1845
+    }
+  ]
+}

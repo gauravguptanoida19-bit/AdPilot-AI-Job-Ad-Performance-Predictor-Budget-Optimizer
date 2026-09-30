@@ -1,0 +1,212 @@
+{
+  "base_expected_value": 0.1008,
+  "top_features": [
+    {
+      "feature": "normalized_salary_annual",
+      "importance": 0.0163,
+      "importance_pct": 20.54
+    },
+    {
+      "feature": "is_remote",
+      "importance": 0.01152,
+      "importance_pct": 14.52
+    },
+    {
+      "feature": "seniority_level",
+      "importance": 0.00949,
+      "importance_pct": 11.96
+    },
+    {
+      "feature": "salary_spread",
+      "importance": 0.00827,
+      "importance_pct": 10.42
+    },
+    {
+      "feature": "sponsored",
+      "importance": 0.0044,
+      "importance_pct": 5.55
+    },
+    {
+      "feature": "cat_customer_support",
+      "importance": 0.00421,
+      "importance_pct": 5.31
+    },
+    {
+      "feature": "has_salary",
+      "importance": 0.00338,
+      "importance_pct": 4.26
+    },
+    {
+      "feature": "cat_sales_and_bd",
+      "importance": 0.00335,
+      "importance_pct": 4.22
+    },
+    {
+      "feature": "cat_marketing_and_growth",
+      "importance": 0.00241,
+      "importance_pct": 3.04
+    },
+    {
+      "feature": "loc_tier_1",
+      "importance": 0.00224,
+      "importance_pct": 2.82
+    },
+    {
+      "feature": "title_length",
+      "importance": 0.00207,
+      "importance_pct": 2.61
+    },
+    {
+      "feature": "cat_data_and_ai",
+      "importance": 0.00193,
+      "importance_pct": 2.43
+    },
+    {
+      "feature": "desc_char_length",
+      "importance": 0.00141,
+      "importance_pct": 1.78
+    },
+    {
+      "feature": "posting_hour",
+      "importance": 0.00134,
+      "importance_pct": 1.69
+    },
+    {
+      "feature": "cat_operations_and_hr",
+      "importance": 0.00123,
+      "importance_pct": 1.55
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "normalized_salary_annual",
+      "importance": 0.0163,
+      "importance_pct": 20.54
+    },
+    {
+      "feature": "is_remote",
+      "importance": 0.01152,
+      "importance_pct": 14.52
+    },
+    {
+      "feature": "seniority_level",
+      "importance": 0.00949,
+      "importance_pct": 11.96
+    },
+    {
+      "feature": "salary_spread",
+      "importance": 0.00827,
+      "importance_pct": 10.42
+    },
+    {
+      "feature": "sponsored",
+      "importance": 0.0044,
+      "importance_pct": 5.55
+    },
+    {
+      "feature": "cat_customer_support",
+      "importance": 0.00421,
+      "importance_pct": 5.31
+    },
+    {
+      "feature": "has_salary",
+      "importance": 0.00338,
+      "importance_pct": 4.26
+    },
+    {
+      "feature": "cat_sales_and_bd",
+      "importance": 0.00335,
+      "importance_pct": 4.22
+    },
+    {
+      "feature": "cat_marketing_and_growth",
+      "importance": 0.00241,
+      "importance_pct": 3.04
+    },
+    {
+      "feature": "loc_tier_1",
+      "importance": 0.00224,
+      "importance_pct": 2.82
+    },
+    {
+      "feature": "title_length",
+      "importance": 0.00207,
+      "importance_pct": 2.61
+    },
+    {
+      "feature": "cat_data_and_ai",
+      "importance": 0.00193,
+      "importance_pct": 2.43
+    },
+    {
+      "feature": "desc_char_length",
+      "importance": 0.00141,
+      "importance_pct": 1.78
+    },
+    {
+      "feature": "posting_hour",
+      "importance": 0.00134,
+      "importance_pct": 1.69
+    },
+    {
+      "feature": "cat_operations_and_hr",
+      "importance": 0.00123,
+      "importance_pct": 1.55
+    },
+    {
+      "feature": "cat_product_and_design",
+      "importance": 0.00108,
+      "importance_pct": 1.36
+    },
+    {
+      "feature": "cat_software_engineering",
+      "importance": 0.00095,
+      "importance_pct": 1.2
+    },
+    {
+      "feature": "posting_dayofweek",
+      "importance": 0.00092,
+      "importance_pct": 1.16
+    },
+    {
+      "feature": "desc_word_count",
+      "importance": 0.00088,
+      "importance_pct": 1.11
+    },
+    {
+      "feature": "skills_count",
+      "importance": 0.00076,
+      "importance_pct": 0.96
+    },
+    {
+      "feature": "is_fulltime",
+      "importance": 0.0005,
+      "importance_pct": 0.63
+    },
+    {
+      "feature": "desc_bullet_points",
+      "importance": 0.00028,
+      "importance_pct": 0.35
+    },
+    {
+      "feature": "loc_tier_2",
+      "importance": 0.00019,
+      "importance_pct": 0.24
+    },
+    {
+      "feature": "is_weekend_posting",
+      "importance": 0.00012,
+      "importance_pct": 0.15
+    },
+    {
+      "feature": "is_contract",
+      "importance": 0.00011,
+      "importance_pct": 0.14
+    },
+    {
+      "feature": "desc_is_optimal_length",
+      "importance": 0.0,
+      "importance_pct": 0.0
+    }
+  ]
+}

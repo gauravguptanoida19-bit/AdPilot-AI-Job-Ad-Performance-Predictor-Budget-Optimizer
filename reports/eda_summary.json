@@ -1,0 +1,71 @@
+{
+  "dataset_summary": {
+    "total_postings": 10000,
+    "total_views": 1099748,
+    "total_applies": 108431,
+    "overall_cvr": 0.0986
+  },
+  "apply_rate_distribution": {
+    "mean": 0.1005,
+    "median": 0.0923,
+    "std": 0.0575,
+    "q25": 0.0595,
+    "q75": 0.1333,
+    "q95": 0.2063
+  },
+  "salary_transparency_analysis": {
+    "with_salary_mean_cvr": 0.1151,
+    "without_salary_mean_cvr": 0.0731,
+    "measured_lift_pct": 57.49,
+    "postings_with_salary_count": 6533,
+    "postings_without_salary_count": 3467
+  },
+  "remote_work_analysis": {
+    "remote_mean_cvr": 0.1167,
+    "onsite_mean_cvr": 0.0921,
+    "measured_lift_pct": 26.69
+  },
+  "experience_level_cvr": {
+    "Associate": 0.1088,
+    "Director": 0.0571,
+    "Entry level": 0.1242,
+    "Executive": 0.0369,
+    "Internship": 0.1304,
+    "Mid-Senior level": 0.0922
+  },
+  "work_type_cvr": {
+    "Contract": 0.0989,
+    "Full-time": 0.1005,
+    "Internship": 0.1059,
+    "Part-time": 0.0999,
+    "Temporary": 0.1025
+  },
+  "feature_correlations": {
+    "has_salary": 0.3513,
+    "salary_spread": 0.3325,
+    "cat_customer_support": 0.2565,
+    "is_remote": 0.208,
+    "cat_operations_and_hr": 0.0958,
+    "title_length": 0.0571,
+    "posting_hour": 0.0213,
+    "cat_data_and_ai": 0.0204,
+    "desc_char_length": 0.0098,
+    "desc_bullet_points": 0.0074,
+    "desc_is_optimal_length": 0.0,
+    "is_fulltime": -0.0012,
+    "desc_word_count": -0.0027,
+    "is_contract": -0.0068,
+    "posting_dayofweek": -0.0139,
+    "loc_tier_2": -0.0156,
+    "loc_tier_1": -0.0184,
+    "is_weekend_posting": -0.0193,
+    "cat_product_and_design": -0.0428,
+    "cat_software_engineering": -0.0542,
+    "skills_count": -0.0663,
+    "cat_marketing_and_growth": -0.0815,
+    "sponsored": -0.0858,
+    "cat_sales_and_bd": -0.1681,
+    "normalized_salary_annual": -0.3078,
+    "seniority_level": -0.3115
+  }
+}

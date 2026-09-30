@@ -1,0 +1,4211 @@
+{
+  "simulation_parameters": {
+    "total_budget": 5000.0,
+    "days": 15,
+    "daily_budget": 333.33,
+    "channel_count": 6
+  },
+  "business_impact": {
+    "application_lift_pct": 36.36,
+    "additional_applications": 76,
+    "cpa_savings_per_app": 6.44,
+    "cpa_savings_pct": 26.87,
+    "headline": "Thompson Sampling generated 36.36% more applications for the identical $5,000 budget ($17.53 CPA vs $23.97 CPA)"
+  },
+  "strategy_comparisons": {
+    "thompson_sampling": {
+      "total_budget_spent": 4994.74,
+      "total_applications": 285,
+      "total_clicks": 4495,
+      "effective_cpa": 17.53,
+      "effective_cvr": 0.0634
+    },
+    "equal_split": {
+      "total_budget_spent": 5009.61,
+      "total_applications": 209,
+      "total_clicks": 3130,
+      "effective_cpa": 23.97,
+      "effective_cvr": 0.0668
+    },
+    "epsilon_greedy": {
+      "total_budget_spent": 5008.2,
+      "total_applications": 244,
+      "total_clicks": 4117,
+      "effective_cpa": 20.53,
+      "effective_cvr": 0.0593
+    },
+    "ucb1": {
+      "total_budget_spent": 4997.61,
+      "total_applications": 229,
+      "total_clicks": 3414,
+      "effective_cpa": 21.82,
+      "effective_cvr": 0.0671
+    }
+  },
+  "detailed_trajectories": {
+    "thompson_sampling": {
+      "strategy": "thompson_sampling",
+      "total_spent": 4994.74,
+      "total_applications": 285,
+      "total_clicks": 4495,
+      "effective_cpa": 17.53,
+      "effective_cvr": 0.0634,
+      "channel_totals": [
+        {
+          "channel_id": "linkedin_jobs",
+          "channel_name": "LinkedIn Jobs",
+          "total_spend": 433.78,
+          "total_clicks": 153,
+          "total_applications": 13,
+          "observed_cpa": 33.37,
+          "observed_cvr": 0.085
+        },
+        {
+          "channel_id": "indeed_sponsored",
+          "channel_name": "Indeed Sponsored",
+          "total_spend": 1391.61,
+          "total_clicks": 974,
+          "total_applications": 85,
+          "observed_cpa": 16.37,
+          "observed_cvr": 0.0873
+        },
+        {
+          "channel_id": "ziprecruiter",
+          "channel_name": "ZipRecruiter",
+          "total_spend": 317.44,
+          "total_clicks": 212,
+          "total_applications": 4,
+          "observed_cpa": 79.36,
+          "observed_cvr": 0.0189
+        },
+        {
+          "channel_id": "glassdoor",
+          "channel_name": "Glassdoor",
+          "total_spend": 167.8,
+          "total_clicks": 71,
+          "total_applications": 2,
+          "observed_cpa": 83.9,
+          "observed_cvr": 0.0282
+        },
+        {
+          "channel_id": "programmatic_aggregator",
+          "channel_name": "Programmatic Aggregator",
+          "total_spend": 2356.25,
+          "total_clicks": 2978,
+          "total_applications": 171,
+          "observed_cpa": 13.78,
+          "observed_cvr": 0.0574
+        },
+        {
+          "channel_id": "niche_tech_board",
+          "channel_name": "Niche Tech Board",
+          "total_spend": 327.86,
+          "total_clicks": 107,
+          "total_applications": 10,
+          "observed_cpa": 32.79,
+          "observed_cvr": 0.0935
+        }
+      ],
+      "daily_logs": [
+        {
+          "day": 1,
+          "day_spend": 331.62,
+          "day_clicks": 379,
+          "day_applications": 22,
+          "cumulative_spend": 331.62,
+          "cumulative_applications": 22,
+          "day_cpa": 15.07,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 9.01,
+              "spend": 7.9,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 7.9
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 17.87,
+              "spend": 17.65,
+              "clicks": 12,
+              "applications": 1,
+              "cpa": 17.65
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 7.31,
+              "spend": 7.12,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 7.12
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 13.92,
+              "spend": 13.62,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 13.62
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 239.27,
+              "spend": 239.61,
+              "clicks": 340,
+              "applications": 19,
+              "cpa": 12.61
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 45.96,
+              "spend": 45.72,
+              "clicks": 13,
+              "applications": 2,
+              "cpa": 22.86
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "day_spend": 332.13,
+          "day_clicks": 235,
+          "day_applications": 19,
+          "cumulative_spend": 663.75,
+          "cumulative_applications": 41,
+          "day_cpa": 17.48,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 6.12,
+              "spend": 5.67,
+              "clicks": 2,
+              "applications": 1,
+              "cpa": 5.67
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 229.43,
+              "spend": 229.07,
+              "clicks": 156,
+              "applications": 13,
+              "cpa": 17.62
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 28.3,
+              "spend": 28.51,
+              "clicks": 19,
+              "applications": 1,
+              "cpa": 28.51
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 19.67,
+              "spend": 19.6,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 19.6
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 40.06,
+              "spend": 40.46,
+              "clicks": 47,
+              "applications": 2,
+              "cpa": 20.23
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 9.76,
+              "spend": 8.82,
+              "clicks": 3,
+              "applications": 2,
+              "cpa": 4.41
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "day_spend": 330.66,
+          "day_clicks": 196,
+          "day_applications": 10,
+          "cumulative_spend": 994.41,
+          "cumulative_applications": 51,
+          "day_cpa": 33.07,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 83.06,
+              "spend": 83.49,
+              "clicks": 31,
+              "applications": 5,
+              "cpa": 16.7
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 25.46,
+              "spend": 24.83,
+              "clicks": 17,
+              "applications": 2,
+              "cpa": 12.41
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 170.68,
+              "spend": 170.26,
+              "clicks": 112,
+              "applications": 2,
+              "cpa": 85.13
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 5.13,
+              "spend": 4.44,
+              "clicks": 2,
+              "applications": 0,
+              "cpa": 4.44
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 21.19,
+              "spend": 20.96,
+              "clicks": 26,
+              "applications": 1,
+              "cpa": 20.96
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 27.82,
+              "spend": 26.68,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 26.68
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "day_spend": 334.3,
+          "day_clicks": 246,
+          "day_applications": 21,
+          "cumulative_spend": 1328.71,
+          "cumulative_applications": 72,
+          "day_cpa": 15.92,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 10.27,
+              "spend": 10.98,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 10.98
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 145.35,
+              "spend": 144.95,
+              "clicks": 100,
+              "applications": 10,
+              "cpa": 14.49
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 6.47,
+              "spend": 6.71,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 6.71
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 18.5,
+              "spend": 19.5,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 19.5
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 73.35,
+              "spend": 73.36,
+              "clicks": 102,
+              "applications": 10,
+              "cpa": 7.34
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 79.4,
+              "spend": 78.8,
+              "clicks": 28,
+              "applications": 1,
+              "cpa": 78.8
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "day_spend": 333.17,
+          "day_clicks": 273,
+          "day_applications": 19,
+          "cumulative_spend": 1661.88,
+          "cumulative_applications": 91,
+          "day_cpa": 17.54,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 88.05,
+              "spend": 87.01,
+              "clicks": 29,
+              "applications": 4,
+              "cpa": 21.75
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 44.78,
+              "spend": 45.34,
+              "clicks": 35,
+              "applications": 6,
+              "cpa": 7.56
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 8.95,
+              "spend": 8.81,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 8.81
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 7.0,
+              "spend": 7.14,
+              "clicks": 3,
+              "applications": 1,
+              "cpa": 7.14
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 166.48,
+              "spend": 166.09,
+              "clicks": 194,
+              "applications": 7,
+              "cpa": 23.73
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 18.08,
+              "spend": 18.78,
+              "clicks": 6,
+              "applications": 1,
+              "cpa": 18.78
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "day_spend": 334.33,
+          "day_clicks": 322,
+          "day_applications": 22,
+          "cumulative_spend": 1996.21,
+          "cumulative_applications": 113,
+          "day_cpa": 15.2,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 15.68,
+              "spend": 16.94,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 16.94
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 52.37,
+              "spend": 52.64,
+              "clicks": 39,
+              "applications": 3,
+              "cpa": 17.55
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 6.82,
+              "spend": 6.33,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 6.33
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 35.82,
+              "spend": 34.66,
+              "clicks": 14,
+              "applications": 0,
+              "cpa": 34.66
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 213.61,
+              "spend": 213.72,
+              "clicks": 255,
+              "applications": 18,
+              "cpa": 11.87
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 9.04,
+              "spend": 10.04,
+              "clicks": 3,
+              "applications": 1,
+              "cpa": 10.04
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "day_spend": 331.41,
+          "day_clicks": 270,
+          "day_applications": 12,
+          "cumulative_spend": 2327.62,
+          "cumulative_applications": 125,
+          "day_cpa": 27.62,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 28.24,
+              "spend": 27.48,
+              "clicks": 10,
+              "applications": 0,
+              "cpa": 27.48
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 162.64,
+              "spend": 163.34,
+              "clicks": 108,
+              "applications": 4,
+              "cpa": 40.84
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 11.84,
+              "spend": 12.03,
+              "clicks": 9,
+              "applications": 1,
+              "cpa": 12.03
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 7.96,
+              "spend": 6.88,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 6.88
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 112.71,
+              "spend": 112.58,
+              "clicks": 137,
+              "applications": 7,
+              "cpa": 16.08
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 9.93,
+              "spend": 9.1,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 9.1
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "day_spend": 333.06,
+          "day_clicks": 316,
+          "day_applications": 19,
+          "cumulative_spend": 2660.68,
+          "cumulative_applications": 144,
+          "day_cpa": 17.53,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 37.93,
+              "spend": 38.21,
+              "clicks": 13,
+              "applications": 1,
+              "cpa": 38.21
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 97.13,
+              "spend": 96.6,
+              "clicks": 69,
+              "applications": 9,
+              "cpa": 10.73
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 11.73,
+              "spend": 11.68,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 11.68
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 6.63,
+              "spend": 6.68,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 6.68
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 166.41,
+              "spend": 166.15,
+              "clicks": 218,
+              "applications": 9,
+              "cpa": 18.46
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 13.51,
+              "spend": 13.74,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 13.74
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "day_spend": 334.03,
+          "day_clicks": 299,
+          "day_applications": 18,
+          "cumulative_spend": 2994.71,
+          "cumulative_applications": 162,
+          "day_cpa": 18.56,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 17.12,
+              "spend": 17.56,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 17.56
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 128.28,
+              "spend": 127.73,
+              "clicks": 88,
+              "applications": 5,
+              "cpa": 25.55
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 8.93,
+              "spend": 8.68,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 8.68
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 9.16,
+              "spend": 9.33,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 9.33
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 156.39,
+              "spend": 156.5,
+              "clicks": 190,
+              "applications": 12,
+              "cpa": 13.04
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 13.45,
+              "spend": 14.23,
+              "clicks": 5,
+              "applications": 1,
+              "cpa": 14.23
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "day_spend": 334.08,
+          "day_clicks": 318,
+          "day_applications": 20,
+          "cumulative_spend": 3328.79,
+          "cumulative_applications": 182,
+          "day_cpa": 16.7,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 52.75,
+              "spend": 53.65,
+              "clicks": 18,
+              "applications": 2,
+              "cpa": 26.82
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 70.87,
+              "spend": 71.29,
+              "clicks": 52,
+              "applications": 4,
+              "cpa": 17.82
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 11.65,
+              "spend": 12.11,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 12.11
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 6.69,
+              "spend": 7.09,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 7.09
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 178.75,
+              "spend": 178.55,
+              "clicks": 233,
+              "applications": 14,
+              "cpa": 12.75
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 12.62,
+              "spend": 11.39,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 11.39
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "day_spend": 333.36,
+          "day_clicks": 309,
+          "day_applications": 22,
+          "cumulative_spend": 3662.15,
+          "cumulative_applications": 204,
+          "day_cpa": 15.15,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 15.38,
+              "spend": 16.44,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 16.44
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 114.24,
+              "spend": 114.17,
+              "clicks": 87,
+              "applications": 6,
+              "cpa": 19.03
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 7.98,
+              "spend": 7.64,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 7.64
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 8.5,
+              "spend": 8.24,
+              "clicks": 4,
+              "applications": 1,
+              "cpa": 8.24
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 158.68,
+              "spend": 158.84,
+              "clicks": 198,
+              "applications": 14,
+              "cpa": 11.35
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 28.55,
+              "spend": 28.03,
+              "clicks": 9,
+              "applications": 1,
+              "cpa": 28.03
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "day_spend": 331.59,
+          "day_clicks": 314,
+          "day_applications": 23,
+          "cumulative_spend": 3993.74,
+          "cumulative_applications": 227,
+          "day_cpa": 14.42,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 22.29,
+              "spend": 21.92,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 21.92
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 79.7,
+              "spend": 79.92,
+              "clicks": 55,
+              "applications": 5,
+              "cpa": 15.98
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 7.12,
+              "spend": 6.96,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 6.96
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 9.11,
+              "spend": 9.2,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 9.2
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 197.44,
+              "spend": 197.42,
+              "clicks": 237,
+              "applications": 18,
+              "cpa": 10.97
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 17.68,
+              "spend": 16.17,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 16.17
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "day_spend": 334.63,
+          "day_clicks": 348,
+          "day_applications": 21,
+          "cumulative_spend": 4328.37,
+          "cumulative_applications": 248,
+          "day_cpa": 15.93,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 19.5,
+              "spend": 20.61,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 20.61
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 66.41,
+              "spend": 66.9,
+              "clicks": 43,
+              "applications": 4,
+              "cpa": 16.73
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 8.72,
+              "spend": 9.01,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 9.01
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 8.14,
+              "spend": 7.14,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 7.14
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 217.62,
+              "spend": 217.83,
+              "clicks": 285,
+              "applications": 17,
+              "cpa": 12.81
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 12.94,
+              "spend": 13.14,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 13.14
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "day_spend": 332.37,
+          "day_clicks": 343,
+          "day_applications": 20,
+          "cumulative_spend": 4660.74,
+          "cumulative_applications": 268,
+          "day_cpa": 16.62,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 14.73,
+              "spend": 13.76,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 13.76
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 49.02,
+              "spend": 49.19,
+              "clicks": 34,
+              "applications": 4,
+              "cpa": 12.3
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 9.1,
+              "spend": 8.9,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 8.9
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 7.51,
+              "spend": 7.0,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 7.0
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 237.87,
+              "spend": 238.15,
+              "clicks": 290,
+              "applications": 16,
+              "cpa": 14.88
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 15.1,
+              "spend": 15.37,
+              "clicks": 5,
+              "applications": 0,
+              "cpa": 15.37
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "day_spend": 334.0,
+          "day_clicks": 327,
+          "day_applications": 17,
+          "cumulative_spend": 4994.74,
+          "cumulative_applications": 285,
+          "day_cpa": 19.65,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 11.01,
+              "spend": 12.16,
+              "clicks": 4,
+              "applications": 0,
+              "cpa": 12.16
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 108.38,
+              "spend": 107.99,
+              "clicks": 79,
+              "applications": 9,
+              "cpa": 12.0
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 13.34,
+              "spend": 12.69,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 12.69
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 7.69,
+              "spend": 7.28,
+              "clicks": 3,
+              "applications": 0,
+              "cpa": 7.28
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 176.0,
+              "spend": 176.03,
+              "clicks": 226,
+              "applications": 7,
+              "cpa": 25.15
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 16.9,
+              "spend": 17.85,
+              "clicks": 6,
+              "applications": 1,
+              "cpa": 17.85
+            }
+          ]
+        }
+      ]
+    },
+    "equal_split": {
+      "strategy": "equal_split",
+      "total_spent": 5009.61,
+      "total_applications": 209,
+      "total_clicks": 3130,
+      "effective_cpa": 23.97,
+      "effective_cvr": 0.0668,
+      "channel_totals": [
+        {
+          "channel_id": "linkedin_jobs",
+          "channel_name": "LinkedIn Jobs",
+          "total_spend": 836.4,
+          "total_clicks": 298,
+          "total_applications": 24,
+          "observed_cpa": 34.85,
+          "observed_cvr": 0.0805
+        },
+        {
+          "channel_id": "indeed_sponsored",
+          "channel_name": "Indeed Sponsored",
+          "total_spend": 834.01,
+          "total_clicks": 587,
+          "total_applications": 54,
+          "observed_cpa": 15.44,
+          "observed_cvr": 0.092
+        },
+        {
+          "channel_id": "ziprecruiter",
+          "channel_name": "ZipRecruiter",
+          "total_spend": 832.84,
+          "total_clicks": 564,
+          "total_applications": 16,
+          "observed_cpa": 52.05,
+          "observed_cvr": 0.0284
+        },
+        {
+          "channel_id": "glassdoor",
+          "channel_name": "Glassdoor",
+          "total_spend": 832.3,
+          "total_clicks": 358,
+          "total_applications": 22,
+          "observed_cpa": 37.83,
+          "observed_cvr": 0.0615
+        },
+        {
+          "channel_id": "programmatic_aggregator",
+          "channel_name": "Programmatic Aggregator",
+          "total_spend": 833.59,
+          "total_clicks": 1049,
+          "total_applications": 63,
+          "observed_cpa": 13.23,
+          "observed_cvr": 0.0601
+        },
+        {
+          "channel_id": "niche_tech_board",
+          "channel_name": "Niche Tech Board",
+          "total_spend": 840.47,
+          "total_clicks": 274,
+          "total_applications": 30,
+          "observed_cpa": 28.02,
+          "observed_cvr": 0.1095
+        }
+      ],
+      "daily_logs": [
+        {
+          "day": 1,
+          "day_spend": 333.18,
+          "day_clicks": 217,
+          "day_applications": 13,
+          "cumulative_spend": 333.18,
+          "cumulative_applications": 13,
+          "day_cpa": 25.63,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.31,
+              "clicks": 21,
+              "applications": 1,
+              "cpa": 55.31
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.88,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.63
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.55,
+              "clicks": 39,
+              "applications": 1,
+              "cpa": 55.55
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.49,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 54.49
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.67,
+              "clicks": 79,
+              "applications": 5,
+              "cpa": 11.13
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.28,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 28.14
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "day_spend": 336.11,
+          "day_clicks": 202,
+          "day_applications": 16,
+          "cumulative_spend": 669.29,
+          "cumulative_applications": 29,
+          "day_cpa": 21.01,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.65,
+              "clicks": 20,
+              "applications": 3,
+              "cpa": 18.88
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.8,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.6
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.52,
+              "clicks": 37,
+              "applications": 1,
+              "cpa": 55.52
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.35,
+              "clicks": 23,
+              "applications": 0,
+              "cpa": 56.35
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.96,
+              "clicks": 65,
+              "applications": 3,
+              "cpa": 18.65
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 55.83,
+              "clicks": 19,
+              "applications": 6,
+              "cpa": 9.3
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "day_spend": 336.16,
+          "day_clicks": 207,
+          "day_applications": 12,
+          "cumulative_spend": 1005.45,
+          "cumulative_applications": 41,
+          "day_cpa": 28.01,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.55,
+              "clicks": 21,
+              "applications": 3,
+              "cpa": 18.85
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.5,
+              "clicks": 38,
+              "applications": 4,
+              "cpa": 13.88
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 56.25,
+              "clicks": 37,
+              "applications": 0,
+              "cpa": 56.25
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.52,
+              "clicks": 25,
+              "applications": 2,
+              "cpa": 27.76
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.64,
+              "clicks": 69,
+              "applications": 3,
+              "cpa": 18.55
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.7,
+              "clicks": 17,
+              "applications": 0,
+              "cpa": 56.7
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "day_spend": 333.05,
+          "day_clicks": 211,
+          "day_applications": 18,
+          "cumulative_spend": 1338.5,
+          "cumulative_applications": 59,
+          "day_cpa": 18.5,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.92,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 54.92
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.08,
+              "clicks": 38,
+              "applications": 4,
+              "cpa": 13.77
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.32,
+              "clicks": 33,
+              "applications": 3,
+              "cpa": 18.44
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.06,
+              "clicks": 23,
+              "applications": 1,
+              "cpa": 56.06
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.38,
+              "clicks": 77,
+              "applications": 8,
+              "cpa": 6.92
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.29,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 56.29
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "day_spend": 335.27,
+          "day_clicks": 206,
+          "day_applications": 18,
+          "cumulative_spend": 1673.77,
+          "cumulative_applications": 77,
+          "day_cpa": 18.63,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 57.01,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 28.5
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.71,
+              "clicks": 43,
+              "applications": 7,
+              "cpa": 7.96
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.8,
+              "clicks": 38,
+              "applications": 1,
+              "cpa": 55.8
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.77,
+              "clicks": 23,
+              "applications": 3,
+              "cpa": 18.26
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.65,
+              "clicks": 65,
+              "applications": 2,
+              "cpa": 27.82
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.33,
+              "clicks": 18,
+              "applications": 3,
+              "cpa": 18.78
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "day_spend": 334.17,
+          "day_clicks": 210,
+          "day_applications": 13,
+          "cumulative_spend": 2007.94,
+          "cumulative_applications": 90,
+          "day_cpa": 25.71,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.46,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 56.46
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.34,
+              "clicks": 41,
+              "applications": 3,
+              "cpa": 18.45
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.71,
+              "clicks": 44,
+              "applications": 1,
+              "cpa": 55.71
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.46,
+              "clicks": 22,
+              "applications": 0,
+              "cpa": 54.46
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.32,
+              "clicks": 66,
+              "applications": 6,
+              "cpa": 9.22
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.88,
+              "clicks": 17,
+              "applications": 2,
+              "cpa": 28.44
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "day_spend": 332.57,
+          "day_clicks": 209,
+          "day_applications": 10,
+          "cumulative_spend": 2340.51,
+          "cumulative_applications": 100,
+          "day_cpa": 33.26,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.95,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 54.95
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.96,
+              "clicks": 37,
+              "applications": 1,
+              "cpa": 55.96
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 56.14,
+              "clicks": 42,
+              "applications": 3,
+              "cpa": 18.71
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.03,
+              "clicks": 24,
+              "applications": 2,
+              "cpa": 27.52
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.88,
+              "clicks": 68,
+              "applications": 3,
+              "cpa": 18.63
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 54.61,
+              "clicks": 18,
+              "applications": 0,
+              "cpa": 54.61
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "day_spend": 333.55,
+          "day_clicks": 215,
+          "day_applications": 15,
+          "cumulative_spend": 2674.06,
+          "cumulative_applications": 115,
+          "day_cpa": 22.24,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.84,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 27.92
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 56.0,
+              "clicks": 40,
+              "applications": 6,
+              "cpa": 9.33
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.47,
+              "clicks": 38,
+              "applications": 2,
+              "cpa": 27.73
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.64,
+              "clicks": 25,
+              "applications": 1,
+              "cpa": 55.64
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.64,
+              "clicks": 73,
+              "applications": 2,
+              "cpa": 27.82
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 54.96,
+              "clicks": 20,
+              "applications": 2,
+              "cpa": 27.48
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "day_spend": 333.81,
+          "day_clicks": 206,
+          "day_applications": 11,
+          "cumulative_spend": 3007.87,
+          "cumulative_applications": 126,
+          "day_cpa": 30.35,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.61,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 27.8
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.15,
+              "clicks": 38,
+              "applications": 1,
+              "cpa": 55.15
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 54.97,
+              "clicks": 38,
+              "applications": 0,
+              "cpa": 54.97
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.98,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 55.98
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.19,
+              "clicks": 67,
+              "applications": 4,
+              "cpa": 13.8
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.91,
+              "clicks": 20,
+              "applications": 3,
+              "cpa": 18.97
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "day_spend": 337.65,
+          "day_clicks": 213,
+          "day_applications": 13,
+          "cumulative_spend": 3345.52,
+          "cumulative_applications": 139,
+          "day_cpa": 25.97,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.63,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 28.32
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 56.21,
+              "clicks": 41,
+              "applications": 3,
+              "cpa": 18.74
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 56.01,
+              "clicks": 37,
+              "applications": 0,
+              "cpa": 56.01
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.68,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 56.68
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.17,
+              "clicks": 72,
+              "applications": 5,
+              "cpa": 11.03
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.95,
+              "clicks": 20,
+              "applications": 2,
+              "cpa": 28.48
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "day_spend": 331.94,
+          "day_clicks": 212,
+          "day_applications": 16,
+          "cumulative_spend": 3677.46,
+          "cumulative_applications": 155,
+          "day_cpa": 20.75,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.78,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 54.78
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.12,
+              "clicks": 42,
+              "applications": 2,
+              "cpa": 27.56
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.02,
+              "clicks": 36,
+              "applications": 1,
+              "cpa": 55.02
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.61,
+              "clicks": 27,
+              "applications": 4,
+              "cpa": 13.9
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.35,
+              "clicks": 69,
+              "applications": 6,
+              "cpa": 9.22
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.06,
+              "clicks": 18,
+              "applications": 2,
+              "cpa": 28.03
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "day_spend": 332.86,
+          "day_clicks": 201,
+          "day_applications": 15,
+          "cumulative_spend": 4010.32,
+          "cumulative_applications": 170,
+          "day_cpa": 22.19,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.01,
+              "clicks": 23,
+              "applications": 1,
+              "cpa": 56.01
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.22,
+              "clicks": 38,
+              "applications": 4,
+              "cpa": 13.8
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.65,
+              "clicks": 32,
+              "applications": 0,
+              "cpa": 55.65
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.2,
+              "clicks": 24,
+              "applications": 2,
+              "cpa": 27.6
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.81,
+              "clicks": 67,
+              "applications": 6,
+              "cpa": 9.3
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 54.97,
+              "clicks": 17,
+              "applications": 2,
+              "cpa": 27.48
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "day_spend": 333.88,
+          "day_clicks": 205,
+          "day_applications": 11,
+          "cumulative_spend": 4344.2,
+          "cumulative_applications": 181,
+          "day_cpa": 30.35,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.94,
+              "clicks": 19,
+              "applications": 1,
+              "cpa": 55.94
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 56.01,
+              "clicks": 36,
+              "applications": 3,
+              "cpa": 18.67
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.57,
+              "clicks": 37,
+              "applications": 0,
+              "cpa": 55.57
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.73,
+              "clicks": 23,
+              "applications": 1,
+              "cpa": 54.73
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.79,
+              "clicks": 73,
+              "applications": 5,
+              "cpa": 11.16
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 55.84,
+              "clicks": 17,
+              "applications": 1,
+              "cpa": 55.84
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "day_spend": 332.02,
+          "day_clicks": 205,
+          "day_applications": 15,
+          "cumulative_spend": 4676.22,
+          "cumulative_applications": 196,
+          "day_cpa": 22.13,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.02,
+              "clicks": 20,
+              "applications": 2,
+              "cpa": 27.51
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 54.98,
+              "clicks": 38,
+              "applications": 5,
+              "cpa": 11.0
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 54.86,
+              "clicks": 37,
+              "applications": 2,
+              "cpa": 27.43
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.99,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 55.99
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.84,
+              "clicks": 68,
+              "applications": 4,
+              "cpa": 13.96
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 55.33,
+              "clicks": 18,
+              "applications": 1,
+              "cpa": 55.33
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "day_spend": 333.39,
+          "day_clicks": 211,
+          "day_applications": 13,
+          "cumulative_spend": 5009.61,
+          "cumulative_applications": 209,
+          "day_cpa": 25.65,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.72,
+              "clicks": 18,
+              "applications": 1,
+              "cpa": 54.72
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 56.05,
+              "clicks": 41,
+              "applications": 5,
+              "cpa": 11.21
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.0,
+              "clicks": 39,
+              "applications": 1,
+              "cpa": 55.0
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.79,
+              "clicks": 23,
+              "applications": 2,
+              "cpa": 27.89
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.3,
+              "clicks": 71,
+              "applications": 1,
+              "cpa": 55.3
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.53,
+              "clicks": 19,
+              "applications": 3,
+              "cpa": 18.84
+            }
+          ]
+        }
+      ]
+    },
+    "epsilon_greedy": {
+      "strategy": "epsilon_greedy",
+      "total_spent": 5008.2,
+      "total_applications": 244,
+      "total_clicks": 4117,
+      "effective_cpa": 20.53,
+      "effective_cvr": 0.0593,
+      "channel_totals": [
+        {
+          "channel_id": "linkedin_jobs",
+          "channel_name": "LinkedIn Jobs",
+          "total_spend": 515.52,
+          "total_clicks": 184,
+          "total_applications": 13,
+          "observed_cpa": 39.66,
+          "observed_cvr": 0.0707
+        },
+        {
+          "channel_id": "indeed_sponsored",
+          "channel_name": "Indeed Sponsored",
+          "total_spend": 514.22,
+          "total_clicks": 364,
+          "total_applications": 31,
+          "observed_cpa": 16.59,
+          "observed_cvr": 0.0852
+        },
+        {
+          "channel_id": "ziprecruiter",
+          "channel_name": "ZipRecruiter",
+          "total_spend": 511.87,
+          "total_clicks": 347,
+          "total_applications": 10,
+          "observed_cpa": 51.19,
+          "observed_cvr": 0.0288
+        },
+        {
+          "channel_id": "glassdoor",
+          "channel_name": "Glassdoor",
+          "total_spend": 514.49,
+          "total_clicks": 221,
+          "total_applications": 11,
+          "observed_cpa": 46.77,
+          "observed_cvr": 0.0498
+        },
+        {
+          "channel_id": "programmatic_aggregator",
+          "channel_name": "Programmatic Aggregator",
+          "total_spend": 2219.69,
+          "total_clicks": 2768,
+          "total_applications": 154,
+          "observed_cpa": 14.41,
+          "observed_cvr": 0.0556
+        },
+        {
+          "channel_id": "niche_tech_board",
+          "channel_name": "Niche Tech Board",
+          "total_spend": 732.41,
+          "total_clicks": 233,
+          "total_applications": 25,
+          "observed_cpa": 29.3,
+          "observed_cvr": 0.1073
+        }
+      ],
+      "daily_logs": [
+        {
+          "day": 1,
+          "day_spend": 333.18,
+          "day_clicks": 217,
+          "day_applications": 13,
+          "cumulative_spend": 333.18,
+          "cumulative_applications": 13,
+          "day_cpa": 25.63,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.31,
+              "clicks": 21,
+              "applications": 1,
+              "cpa": 55.31
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.88,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.63
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.55,
+              "clicks": 39,
+              "applications": 1,
+              "cpa": 55.55
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.49,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 54.49
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.67,
+              "clicks": 79,
+              "applications": 5,
+              "cpa": 11.13
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.28,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 28.14
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "day_spend": 336.11,
+          "day_clicks": 202,
+          "day_applications": 16,
+          "cumulative_spend": 669.29,
+          "cumulative_applications": 29,
+          "day_cpa": 21.01,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.65,
+              "clicks": 20,
+              "applications": 3,
+              "cpa": 18.88
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.8,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.6
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.52,
+              "clicks": 37,
+              "applications": 1,
+              "cpa": 55.52
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.35,
+              "clicks": 23,
+              "applications": 0,
+              "cpa": 56.35
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.96,
+              "clicks": 65,
+              "applications": 3,
+              "cpa": 18.65
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 55.83,
+              "clicks": 19,
+              "applications": 6,
+              "cpa": 9.3
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "day_spend": 332.69,
+          "day_clicks": 138,
+          "day_applications": 9,
+          "cumulative_spend": 1001.98,
+          "cumulative_applications": 38,
+          "day_cpa": 36.97,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 18.85,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 18.85
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.45,
+              "clicks": 14,
+              "applications": 2,
+              "cpa": 10.22
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 19.76,
+              "clicks": 13,
+              "applications": 0,
+              "cpa": 19.76
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 19.99,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 19.99
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 20.0,
+              "spend": 20.16,
+              "clicks": 25,
+              "applications": 1,
+              "cpa": 20.16
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 233.33,
+              "spend": 233.48,
+              "clicks": 70,
+              "applications": 5,
+              "cpa": 46.7
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "day_spend": 333.05,
+          "day_clicks": 211,
+          "day_applications": 18,
+          "cumulative_spend": 1335.03,
+          "cumulative_applications": 56,
+          "day_cpa": 18.5,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.92,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 54.92
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.08,
+              "clicks": 38,
+              "applications": 4,
+              "cpa": 13.77
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.32,
+              "clicks": 33,
+              "applications": 3,
+              "cpa": 18.44
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.06,
+              "clicks": 23,
+              "applications": 1,
+              "cpa": 56.06
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.38,
+              "clicks": 77,
+              "applications": 8,
+              "cpa": 6.92
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.29,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 56.29
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "day_spend": 332.55,
+          "day_clicks": 323,
+          "day_applications": 17,
+          "cumulative_spend": 1667.58,
+          "cumulative_applications": 73,
+          "day_cpa": 19.56,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 21.0,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 21.0
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 19.43,
+              "clicks": 15,
+              "applications": 3,
+              "cpa": 6.48
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 20.56,
+              "clicks": 14,
+              "applications": 0,
+              "cpa": 20.56
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 19.05,
+              "clicks": 8,
+              "applications": 1,
+              "cpa": 19.05
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.73,
+              "clicks": 273,
+              "applications": 11,
+              "cpa": 21.25
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 18.78,
+              "clicks": 6,
+              "applications": 1,
+              "cpa": 18.78
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "day_spend": 334.17,
+          "day_clicks": 210,
+          "day_applications": 13,
+          "cumulative_spend": 2001.75,
+          "cumulative_applications": 86,
+          "day_cpa": 25.71,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.46,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 56.46
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.34,
+              "clicks": 41,
+              "applications": 3,
+              "cpa": 18.45
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.71,
+              "clicks": 44,
+              "applications": 1,
+              "cpa": 55.71
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.46,
+              "clicks": 22,
+              "applications": 0,
+              "cpa": 54.46
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.32,
+              "clicks": 66,
+              "applications": 6,
+              "cpa": 9.22
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.88,
+              "clicks": 17,
+              "applications": 2,
+              "cpa": 28.44
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "day_spend": 334.21,
+          "day_clicks": 335,
+          "day_applications": 18,
+          "cumulative_spend": 2335.96,
+          "cumulative_applications": 104,
+          "day_cpa": 18.57,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 19.23,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 19.23
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 19.66,
+              "clicks": 13,
+              "applications": 0,
+              "cpa": 19.66
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 20.05,
+              "clicks": 15,
+              "applications": 1,
+              "cpa": 20.05
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 20.64,
+              "clicks": 9,
+              "applications": 1,
+              "cpa": 20.64
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.39,
+              "clicks": 284,
+              "applications": 16,
+              "cpa": 14.59
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 21.24,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 21.24
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "day_spend": 333.1,
+          "day_clicks": 357,
+          "day_applications": 18,
+          "cumulative_spend": 2669.06,
+          "cumulative_applications": 122,
+          "day_cpa": 18.51,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 20.57,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 20.57
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 19.6,
+              "clicks": 14,
+              "applications": 2,
+              "cpa": 9.8
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 20.44,
+              "clicks": 14,
+              "applications": 1,
+              "cpa": 20.44
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 20.03,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 20.03
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.22,
+              "clicks": 306,
+              "applications": 13,
+              "cpa": 17.94
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 19.24,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 19.24
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "day_spend": 335.07,
+          "day_clicks": 334,
+          "day_applications": 18,
+          "cumulative_spend": 3004.13,
+          "cumulative_applications": 140,
+          "day_cpa": 18.61,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 20.49,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 20.49
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.32,
+              "clicks": 14,
+              "applications": 0,
+              "cpa": 20.32
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 20.25,
+              "clicks": 14,
+              "applications": 0,
+              "cpa": 20.25
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 20.99,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 20.99
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.1,
+              "clicks": 283,
+              "applications": 17,
+              "cpa": 13.71
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 19.92,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 19.92
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "day_spend": 337.65,
+          "day_clicks": 213,
+          "day_applications": 13,
+          "cumulative_spend": 3341.78,
+          "cumulative_applications": 153,
+          "day_cpa": 25.97,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.63,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 28.32
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 56.21,
+              "clicks": 41,
+              "applications": 3,
+              "cpa": 18.74
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 56.01,
+              "clicks": 37,
+              "applications": 0,
+              "cpa": 56.01
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.68,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 56.68
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.17,
+              "clicks": 72,
+              "applications": 5,
+              "cpa": 11.03
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.95,
+              "clicks": 20,
+              "applications": 2,
+              "cpa": 28.48
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "day_spend": 331.94,
+          "day_clicks": 212,
+          "day_applications": 16,
+          "cumulative_spend": 3673.72,
+          "cumulative_applications": 169,
+          "day_cpa": 20.75,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 54.78,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 54.78
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.12,
+              "clicks": 42,
+              "applications": 2,
+              "cpa": 27.56
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.02,
+              "clicks": 36,
+              "applications": 1,
+              "cpa": 55.02
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 55.61,
+              "clicks": 27,
+              "applications": 4,
+              "cpa": 13.9
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.35,
+              "clicks": 69,
+              "applications": 6,
+              "cpa": 9.22
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.06,
+              "clicks": 18,
+              "applications": 2,
+              "cpa": 28.03
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "day_spend": 332.29,
+          "day_clicks": 328,
+          "day_applications": 23,
+          "cumulative_spend": 4006.01,
+          "cumulative_applications": 192,
+          "day_cpa": 14.45,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 19.48,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 19.48
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.34,
+              "clicks": 14,
+              "applications": 1,
+              "cpa": 20.34
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 19.13,
+              "clicks": 11,
+              "applications": 0,
+              "cpa": 19.13
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 20.7,
+              "clicks": 9,
+              "applications": 1,
+              "cpa": 20.7
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.24,
+              "clicks": 280,
+              "applications": 20,
+              "cpa": 11.66
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 19.4,
+              "clicks": 6,
+              "applications": 1,
+              "cpa": 19.4
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "day_spend": 332.22,
+          "day_clicks": 352,
+          "day_applications": 19,
+          "cumulative_spend": 4338.23,
+          "cumulative_applications": 211,
+          "day_cpa": 17.49,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 20.61,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 20.61
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.22,
+              "clicks": 13,
+              "applications": 1,
+              "cpa": 20.22
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 19.53,
+              "clicks": 13,
+              "applications": 0,
+              "cpa": 19.53
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 19.04,
+              "clicks": 8,
+              "applications": 0,
+              "cpa": 19.04
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.11,
+              "clicks": 305,
+              "applications": 18,
+              "cpa": 12.95
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 19.71,
+              "clicks": 6,
+              "applications": 0,
+              "cpa": 19.71
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "day_spend": 334.54,
+          "day_clicks": 334,
+          "day_applications": 19,
+          "cumulative_spend": 4672.77,
+          "cumulative_applications": 230,
+          "day_cpa": 17.61,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 19.26,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 19.26
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.26,
+              "clicks": 14,
+              "applications": 2,
+              "cpa": 10.13
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 19.28,
+              "clicks": 13,
+              "applications": 1,
+              "cpa": 19.28
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 21.0,
+              "clicks": 9,
+              "applications": 0,
+              "cpa": 21.0
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.22,
+              "clicks": 284,
+              "applications": 15,
+              "cpa": 15.55
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 21.52,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 21.52
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "day_spend": 335.43,
+          "day_clicks": 351,
+          "day_applications": 14,
+          "cumulative_spend": 5008.2,
+          "cumulative_applications": 244,
+          "day_cpa": 23.96,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 20.0,
+              "spend": 21.28,
+              "clicks": 7,
+              "applications": 0,
+              "cpa": 21.28
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 20.0,
+              "spend": 20.51,
+              "clicks": 15,
+              "applications": 2,
+              "cpa": 10.26
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 20.0,
+              "spend": 19.74,
+              "clicks": 14,
+              "applications": 0,
+              "cpa": 19.74
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 20.0,
+              "spend": 19.4,
+              "clicks": 8,
+              "applications": 1,
+              "cpa": 19.4
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 233.33,
+              "spend": 233.67,
+              "clicks": 300,
+              "applications": 10,
+              "cpa": 23.37
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 20.0,
+              "spend": 20.83,
+              "clicks": 7,
+              "applications": 1,
+              "cpa": 20.83
+            }
+          ]
+        }
+      ]
+    },
+    "ucb1": {
+      "strategy": "ucb1",
+      "total_spent": 4997.61,
+      "total_applications": 229,
+      "total_clicks": 3414,
+      "effective_cpa": 21.82,
+      "effective_cvr": 0.0671,
+      "channel_totals": [
+        {
+          "channel_id": "linkedin_jobs",
+          "channel_name": "LinkedIn Jobs",
+          "total_spend": 712.36,
+          "total_clicks": 254,
+          "total_applications": 21,
+          "observed_cpa": 33.92,
+          "observed_cvr": 0.0827
+        },
+        {
+          "channel_id": "indeed_sponsored",
+          "channel_name": "Indeed Sponsored",
+          "total_spend": 945.42,
+          "total_clicks": 666,
+          "total_applications": 63,
+          "observed_cpa": 15.01,
+          "observed_cvr": 0.0946
+        },
+        {
+          "channel_id": "ziprecruiter",
+          "channel_name": "ZipRecruiter",
+          "total_spend": 794.25,
+          "total_clicks": 538,
+          "total_applications": 16,
+          "observed_cpa": 49.64,
+          "observed_cvr": 0.0297
+        },
+        {
+          "channel_id": "glassdoor",
+          "channel_name": "Glassdoor",
+          "total_spend": 704.96,
+          "total_clicks": 303,
+          "total_applications": 18,
+          "observed_cpa": 39.16,
+          "observed_cvr": 0.0594
+        },
+        {
+          "channel_id": "programmatic_aggregator",
+          "channel_name": "Programmatic Aggregator",
+          "total_spend": 1131.07,
+          "total_clicks": 1422,
+          "total_applications": 84,
+          "observed_cpa": 13.47,
+          "observed_cvr": 0.0591
+        },
+        {
+          "channel_id": "niche_tech_board",
+          "channel_name": "Niche Tech Board",
+          "total_spend": 709.55,
+          "total_clicks": 231,
+          "total_applications": 27,
+          "observed_cpa": 26.28,
+          "observed_cvr": 0.1169
+        }
+      ],
+      "daily_logs": [
+        {
+          "day": 1,
+          "day_spend": 333.18,
+          "day_clicks": 217,
+          "day_applications": 13,
+          "cumulative_spend": 333.18,
+          "cumulative_applications": 13,
+          "day_cpa": 25.63,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 55.31,
+              "clicks": 21,
+              "applications": 1,
+              "cpa": 55.31
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.88,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.63
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.55,
+              "clicks": 39,
+              "applications": 1,
+              "cpa": 55.55
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 54.49,
+              "clicks": 24,
+              "applications": 1,
+              "cpa": 54.49
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.67,
+              "clicks": 79,
+              "applications": 5,
+              "cpa": 11.13
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 56.28,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 28.14
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "day_spend": 336.11,
+          "day_clicks": 202,
+          "day_applications": 16,
+          "cumulative_spend": 669.29,
+          "cumulative_applications": 29,
+          "day_cpa": 21.01,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 55.56,
+              "spend": 56.65,
+              "clicks": 20,
+              "applications": 3,
+              "cpa": 18.88
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 55.56,
+              "spend": 55.8,
+              "clicks": 38,
+              "applications": 3,
+              "cpa": 18.6
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.56,
+              "spend": 55.52,
+              "clicks": 37,
+              "applications": 1,
+              "cpa": 55.52
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 55.56,
+              "spend": 56.35,
+              "clicks": 23,
+              "applications": 0,
+              "cpa": 56.35
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 55.56,
+              "spend": 55.96,
+              "clicks": 65,
+              "applications": 3,
+              "cpa": 18.65
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 55.56,
+              "spend": 55.83,
+              "clicks": 19,
+              "applications": 6,
+              "cpa": 9.3
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "day_spend": 332.77,
+          "day_clicks": 229,
+          "day_applications": 14,
+          "cumulative_spend": 1002.06,
+          "cumulative_applications": 43,
+          "day_cpa": 23.77,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 43.29,
+              "spend": 43.09,
+              "clicks": 16,
+              "applications": 3,
+              "cpa": 14.36
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 62.35,
+              "spend": 62.81,
+              "clicks": 43,
+              "applications": 5,
+              "cpa": 12.56
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 53.63,
+              "spend": 53.21,
+              "clicks": 35,
+              "applications": 0,
+              "cpa": 53.21
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 42.55,
+              "spend": 42.19,
+              "clicks": 19,
+              "applications": 1,
+              "cpa": 42.19
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 81.68,
+              "spend": 81.44,
+              "clicks": 101,
+              "applications": 5,
+              "cpa": 16.29
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 49.83,
+              "spend": 50.03,
+              "clicks": 15,
+              "applications": 0,
+              "cpa": 50.03
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "day_spend": 331.81,
+          "day_clicks": 235,
+          "day_applications": 20,
+          "cumulative_spend": 1333.87,
+          "cumulative_applications": 63,
+          "day_cpa": 16.59,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 47.08,
+              "spend": 46.68,
+              "clicks": 17,
+              "applications": 1,
+              "cpa": 46.68
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 64.04,
+              "spend": 63.78,
+              "clicks": 44,
+              "applications": 5,
+              "cpa": 12.76
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 52.71,
+              "spend": 51.96,
+              "clicks": 31,
+              "applications": 3,
+              "cpa": 17.32
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 44.28,
+              "spend": 43.87,
+              "clicks": 18,
+              "applications": 1,
+              "cpa": 43.87
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 77.78,
+              "spend": 77.67,
+              "clicks": 108,
+              "applications": 10,
+              "cpa": 7.77
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 47.45,
+              "spend": 47.85,
+              "clicks": 17,
+              "applications": 0,
+              "cpa": 47.85
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "day_spend": 333.4,
+          "day_clicks": 228,
+          "day_applications": 18,
+          "cumulative_spend": 1667.27,
+          "cumulative_applications": 81,
+          "day_cpa": 18.52,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.13,
+              "spend": 45.0,
+              "clicks": 15,
+              "applications": 2,
+              "cpa": 22.5
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 64.22,
+              "spend": 64.77,
+              "clicks": 50,
+              "applications": 8,
+              "cpa": 8.1
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 55.28,
+              "spend": 55.8,
+              "clicks": 38,
+              "applications": 1,
+              "cpa": 55.8
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 44.84,
+              "spend": 45.25,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 22.62
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 78.63,
+              "spend": 78.77,
+              "clicks": 92,
+              "applications": 3,
+              "cpa": 26.26
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 44.23,
+              "spend": 43.81,
+              "clicks": 14,
+              "applications": 2,
+              "cpa": 21.91
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "day_spend": 334.11,
+          "day_clicks": 231,
+          "day_applications": 16,
+          "cumulative_spend": 2001.38,
+          "cumulative_applications": 97,
+          "day_cpa": 20.88,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.95,
+              "spend": 47.99,
+              "clicks": 17,
+              "applications": 1,
+              "cpa": 47.99
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 65.73,
+              "spend": 66.14,
+              "clicks": 49,
+              "applications": 4,
+              "cpa": 16.54
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 53.76,
+              "spend": 53.18,
+              "clicks": 42,
+              "applications": 1,
+              "cpa": 53.18
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 45.86,
+              "spend": 47.04,
+              "clicks": 19,
+              "applications": 0,
+              "cpa": 47.04
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 76.12,
+              "spend": 76.27,
+              "clicks": 91,
+              "applications": 8,
+              "cpa": 9.53
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 44.92,
+              "spend": 43.49,
+              "clicks": 13,
+              "applications": 2,
+              "cpa": 21.75
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "day_spend": 333.31,
+          "day_clicks": 229,
+          "day_applications": 12,
+          "cumulative_spend": 2334.69,
+          "cumulative_applications": 109,
+          "day_cpa": 27.78,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.47,
+              "spend": 46.71,
+              "clicks": 17,
+              "applications": 1,
+              "cpa": 46.71
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 64.84,
+              "spend": 65.03,
+              "clicks": 43,
+              "applications": 1,
+              "cpa": 65.03
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 52.56,
+              "spend": 52.13,
+              "clicks": 39,
+              "applications": 3,
+              "cpa": 17.38
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 45.07,
+              "spend": 45.86,
+              "clicks": 20,
+              "applications": 2,
+              "cpa": 22.93
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 78.28,
+              "spend": 78.07,
+              "clicks": 95,
+              "applications": 5,
+              "cpa": 15.61
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.12,
+              "spend": 45.51,
+              "clicks": 15,
+              "applications": 0,
+              "cpa": 45.51
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "day_spend": 333.25,
+          "day_clicks": 238,
+          "day_applications": 16,
+          "cumulative_spend": 2667.94,
+          "cumulative_applications": 125,
+          "day_cpa": 20.83,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.33,
+              "spend": 47.03,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 23.52
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.5,
+              "spend": 63.0,
+              "clicks": 45,
+              "applications": 6,
+              "cpa": 10.5
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 53.78,
+              "spend": 54.01,
+              "clicks": 37,
+              "applications": 2,
+              "cpa": 27.0
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 46.21,
+              "spend": 46.74,
+              "clicks": 21,
+              "applications": 1,
+              "cpa": 46.74
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 78.44,
+              "spend": 78.5,
+              "clicks": 103,
+              "applications": 3,
+              "cpa": 26.17
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 45.06,
+              "spend": 43.97,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 21.98
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "day_spend": 334.44,
+          "day_clicks": 227,
+          "day_applications": 13,
+          "cumulative_spend": 3002.38,
+          "cumulative_applications": 138,
+          "day_cpa": 25.73,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.9,
+              "spend": 46.83,
+              "clicks": 16,
+              "applications": 1,
+              "cpa": 46.83
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 64.78,
+              "spend": 65.31,
+              "clicks": 45,
+              "applications": 2,
+              "cpa": 32.66
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 53.97,
+              "spend": 53.52,
+              "clicks": 37,
+              "applications": 0,
+              "cpa": 53.52
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 45.88,
+              "spend": 46.65,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 46.65
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 76.55,
+              "spend": 76.6,
+              "clicks": 93,
+              "applications": 6,
+              "cpa": 12.77
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 45.24,
+              "spend": 45.53,
+              "clicks": 16,
+              "applications": 3,
+              "cpa": 15.18
+            }
+          ]
+        },
+        {
+          "day": 10,
+          "day_spend": 332.93,
+          "day_clicks": 234,
+          "day_applications": 16,
+          "cumulative_spend": 3335.31,
+          "cumulative_applications": 154,
+          "day_cpa": 20.81,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.81,
+              "spend": 47.69,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 23.84
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.9,
+              "spend": 64.43,
+              "clicks": 47,
+              "applications": 4,
+              "cpa": 16.11
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 53.04,
+              "spend": 52.98,
+              "clicks": 35,
+              "applications": 0,
+              "cpa": 52.98
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 45.91,
+              "spend": 44.87,
+              "clicks": 19,
+              "applications": 1,
+              "cpa": 44.87
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 77.37,
+              "spend": 77.4,
+              "clicks": 101,
+              "applications": 7,
+              "cpa": 11.06
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.3,
+              "spend": 45.56,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 22.78
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "day_spend": 332.68,
+          "day_clicks": 234,
+          "day_applications": 16,
+          "cumulative_spend": 3667.99,
+          "cumulative_applications": 170,
+          "day_cpa": 20.79,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 47.24,
+              "spend": 46.57,
+              "clicks": 17,
+              "applications": 0,
+              "cpa": 46.57
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.79,
+              "spend": 64.3,
+              "clicks": 49,
+              "applications": 3,
+              "cpa": 21.43
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 52.2,
+              "spend": 51.96,
+              "clicks": 34,
+              "applications": 1,
+              "cpa": 51.96
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 45.89,
+              "spend": 45.31,
+              "clicks": 22,
+              "applications": 3,
+              "cpa": 15.1
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 77.84,
+              "spend": 77.82,
+              "clicks": 97,
+              "applications": 7,
+              "cpa": 11.12
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.37,
+              "spend": 46.72,
+              "clicks": 15,
+              "applications": 2,
+              "cpa": 23.36
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "day_spend": 330.5,
+          "day_clicks": 220,
+          "day_applications": 16,
+          "cumulative_spend": 3998.49,
+          "cumulative_applications": 186,
+          "day_cpa": 20.66,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 46.18,
+              "spend": 46.27,
+              "clicks": 19,
+              "applications": 1,
+              "cpa": 46.27
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.1,
+              "spend": 62.48,
+              "clicks": 43,
+              "applications": 4,
+              "cpa": 15.62
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 52.09,
+              "spend": 52.18,
+              "clicks": 30,
+              "applications": 0,
+              "cpa": 52.18
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 46.81,
+              "spend": 46.0,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 46.0
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 78.51,
+              "spend": 78.3,
+              "clicks": 94,
+              "applications": 8,
+              "cpa": 9.79
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.64,
+              "spend": 45.27,
+              "clicks": 14,
+              "applications": 2,
+              "cpa": 22.64
+            }
+          ]
+        },
+        {
+          "day": 13,
+          "day_spend": 332.08,
+          "day_clicks": 228,
+          "day_applications": 13,
+          "cumulative_spend": 4330.57,
+          "cumulative_applications": 199,
+          "day_cpa": 25.54,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 45.48,
+              "spend": 44.17,
+              "clicks": 15,
+              "applications": 1,
+              "cpa": 44.17
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.32,
+              "spend": 63.78,
+              "clicks": 41,
+              "applications": 4,
+              "cpa": 15.95
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 51.6,
+              "spend": 51.07,
+              "clicks": 34,
+              "applications": 0,
+              "cpa": 51.07
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 46.52,
+              "spend": 47.59,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 47.59
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 79.48,
+              "spend": 79.49,
+              "clicks": 104,
+              "applications": 6,
+              "cpa": 13.25
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.94,
+              "spend": 45.98,
+              "clicks": 14,
+              "applications": 1,
+              "cpa": 45.98
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "day_spend": 333.27,
+          "day_clicks": 227,
+          "day_applications": 17,
+          "cumulative_spend": 4663.84,
+          "cumulative_applications": 216,
+          "day_cpa": 19.6,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 45.56,
+              "spend": 46.77,
+              "clicks": 17,
+              "applications": 2,
+              "cpa": 23.39
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 63.92,
+              "spend": 63.66,
+              "clicks": 44,
+              "applications": 5,
+              "cpa": 12.73
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 51.08,
+              "spend": 50.41,
+              "clicks": 34,
+              "applications": 2,
+              "cpa": 25.2
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 46.45,
+              "spend": 46.66,
+              "clicks": 20,
+              "applications": 1,
+              "cpa": 46.66
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 79.5,
+              "spend": 79.66,
+              "clicks": 97,
+              "applications": 6,
+              "cpa": 13.28
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.82,
+              "spend": 46.11,
+              "clicks": 15,
+              "applications": 1,
+              "cpa": 46.11
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "day_spend": 333.77,
+          "day_clicks": 235,
+          "day_applications": 13,
+          "cumulative_spend": 4997.61,
+          "cumulative_applications": 229,
+          "day_cpa": 25.67,
+          "channels": [
+            {
+              "channel_id": "linkedin_jobs",
+              "channel_name": "LinkedIn Jobs",
+              "allocated_budget": 45.71,
+              "spend": 45.6,
+              "clicks": 15,
+              "applications": 0,
+              "cpa": 45.6
+            },
+            {
+              "channel_id": "indeed_sponsored",
+              "channel_name": "Indeed Sponsored",
+              "allocated_budget": 64.36,
+              "spend": 64.25,
+              "clicks": 47,
+              "applications": 6,
+              "cpa": 10.71
+            },
+            {
+              "channel_id": "ziprecruiter",
+              "channel_name": "ZipRecruiter",
+              "allocated_budget": 51.32,
+              "spend": 50.77,
+              "clicks": 36,
+              "applications": 1,
+              "cpa": 50.77
+            },
+            {
+              "channel_id": "glassdoor",
+              "channel_name": "Glassdoor",
+              "allocated_budget": 46.16,
+              "spend": 46.09,
+              "clicks": 19,
+              "applications": 2,
+              "cpa": 23.05
+            },
+            {
+              "channel_id": "programmatic_aggregator",
+              "channel_name": "Programmatic Aggregator",
+              "allocated_budget": 79.45,
+              "spend": 79.45,
+              "clicks": 102,
+              "applications": 2,
+              "cpa": 39.73
+            },
+            {
+              "channel_id": "niche_tech_board",
+              "channel_name": "Niche Tech Board",
+              "allocated_budget": 46.33,
+              "spend": 47.61,
+              "clicks": 16,
+              "applications": 2,
+              "cpa": 23.8
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

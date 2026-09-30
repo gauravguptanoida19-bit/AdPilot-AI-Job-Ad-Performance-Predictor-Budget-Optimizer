@@ -1,0 +1,61 @@
+{
+  "regression": {
+    "dummy_baseline": {
+      "model": "Dummy Baseline (Median)",
+      "rmse": 0.0584,
+      "mae": 0.0441,
+      "r2": -0.013,
+      "pearson_r": 0.0
+    },
+    "linear_ridge": {
+      "model": "Ridge Regression",
+      "rmse": 0.045,
+      "mae": 0.0335,
+      "r2": 0.3996,
+      "pearson_r": 0.6324
+    },
+    "lightgbm": {
+      "model": "LightGBM Regressor",
+      "rmse": 0.044,
+      "mae": 0.0325,
+      "r2": 0.426,
+      "pearson_r": 0.6528
+    }
+  },
+  "classification": {
+    "dummy_baseline": {
+      "model": "Dummy Baseline",
+      "roc_auc": 0.5,
+      "pr_auc": 0.4,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.6
+    },
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "roc_auc": 0.8235,
+      "pr_auc": 0.7577,
+      "f1_score": 0.6649,
+      "precision": 0.7201,
+      "recall": 0.6175,
+      "accuracy": 0.751
+    },
+    "lightgbm": {
+      "model": "LightGBM Classifier",
+      "roc_auc": 0.8258,
+      "pr_auc": 0.7545,
+      "f1_score": 0.6707,
+      "precision": 0.7219,
+      "recall": 0.6262,
+      "accuracy": 0.754
+    }
+  },
+  "improvements": {
+    "rmse_reduction_vs_baseline_pct": 24.66,
+    "r2_jump": 0.439,
+    "roc_auc_lift_pct": 65.16,
+    "roc_auc_lightgbm": 0.8258,
+    "roc_auc_logistic": 0.8235
+  }
+}
