@@ -2,6 +2,8 @@
 
 AdPilot is a programmatic recruitment ad performance predictor and dynamic budget optimizer built to solve key media-buying inefficiencies in talent acquisition.
 
+**🌐 Live Demo**: [https://gauravguptanoida19-bit.github.io/AdPilot-AI-Job-Ad-Performance-Predictor-Budget-Optimizer/](https://gauravguptanoida19-bit.github.io/AdPilot-AI-Job-Ad-Performance-Predictor-Budget-Optimizer/)
+
 ```mermaid
 graph TD
     A[Raw Job Postings Data<br/>Kaggle LinkedIn Schema] --> B[Feature Engineering Engine<br/>26 Predictive Signals]

@@ -2,6 +2,8 @@
 
 This document details the exact empirical findings measured on the held-out test split (2,000 postings) and episodic multi-armed bandit simulation runs.
 
+**🌐 Live Interactive Dashboard**: [https://gauravguptanoida19-bit.github.io/AdPilot-AI-Job-Ad-Performance-Predictor-Budget-Optimizer/](https://gauravguptanoida19-bit.github.io/AdPilot-AI-Job-Ad-Performance-Predictor-Budget-Optimizer/)
+
 ---
 
 ## 1. Candidate Application Rate Prediction (Regression)
